@@ -52,7 +52,8 @@ Test the application
 curl -X POST http://localhost:5000/test --data '{"string_to_cut": "iamyourlyftdriver"}' -H 'Content-Type: application/json'
 ```
 
-#Assumptions:
+Assumptions
+```
 If there are white spaces leading, trailing or middle of the string, then my code will remove all the whitespaces.
 eg: 
 1. "string_to_cut": "    iamyourlyftdriver"
@@ -64,3 +65,4 @@ In all the three scenarios  above the result would be "muydv".
 4. "string_to_cut":  " &nbsp; &nbsp;  "
 
 The output for this scenario would be ""
+```
